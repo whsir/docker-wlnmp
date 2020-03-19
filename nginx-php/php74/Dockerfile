@@ -5,5 +5,5 @@ RUN yum install net-tools epel-release -y \
     && yum install wnginx -y \
     && yum install wphp74* -y
 EXPOSE 80
-COPY ./start.sh /start.sh
+COPY ./nginx-php/php74/start.sh /start.sh
 CMD ["/bin/bash","/start.sh"]
